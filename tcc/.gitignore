@@ -1,0 +1,8 @@
+# Dados não são versionados (ver README)
+dataset/
+# Saídas e checkpoints gerados localmente
+scripts/resultados_corrigidos/
+**/CHECKPOINT_*
+**/*.tmp
+__pycache__/
+.ipynb_checkpoints/

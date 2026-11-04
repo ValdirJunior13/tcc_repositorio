@@ -1,0 +1,47 @@
+$ python tcc/scripts/verificar_indice_original_df11.py tcc/dataset/anderson
+Carregando dados...
+  train: registros associados ao Coh-Metrix = 100.0%
+  test: registros associados ao Coh-Metrix = 100.0%
+Gerando TF-IDF (stopwords+lemma+POS)...
+Apenas TF-IDF (stopwords+lemma+POS)          Regressão Linear       MAE=0.7668 RMSE=1.0850 R2=-0.4837
+Apenas TF-IDF (stopwords+lemma+POS)          KNN                    MAE=0.8817 RMSE=1.0498 R2=-0.3890
+Apenas TF-IDF (stopwords+lemma+POS)          SVR                    MAE=0.8501 RMSE=0.9733 R2=-0.1939
+Apenas TF-IDF (stopwords+lemma+POS)          Árvore de Decisão      MAE=0.7805 RMSE=1.2123 R2=-0.8523
+Apenas TF-IDF (stopwords+lemma+POS)          Random Forest          MAE=0.6402 RMSE=0.8145 R2=0.1638
+Apenas TF-IDF (stopwords+lemma+POS)          HistGradientBoosting   MAE=0.6120 RMSE=0.7889 R2=0.2157
+Apenas TF-IDF (stopwords+lemma+POS)          Rede Neural (MLP)      MAE=1.0640 RMSE=1.4132 R2=-1.5171
+Apenas TF-IDF (stopwords+lemma+POS)          XGBoost                MAE=0.7271 RMSE=0.8713 R2=0.0431
+=== COM indice_original ===
+Apenas Coh-Metrix [COM indice_original]      Regressão Linear       MAE=0.9525 RMSE=1.1722 R2=-0.7318
+Apenas Coh-Metrix [COM indice_original]      KNN                    MAE=1.0362 RMSE=1.2206 R2=-0.8776
+Apenas Coh-Metrix [COM indice_original]      SVR                    MAE=0.8240 RMSE=0.9840 R2=-0.2203
+Apenas Coh-Metrix [COM indice_original]      Árvore de Decisão      MAE=0.8306 RMSE=1.2050 R2=-0.8300
+Apenas Coh-Metrix [COM indice_original]      Random Forest          MAE=0.8264 RMSE=0.9511 R2=-0.1401
+Apenas Coh-Metrix [COM indice_original]      HistGradientBoosting   MAE=0.7392 RMSE=0.8826 R2=0.0182
+Apenas Coh-Metrix [COM indice_original]      Rede Neural (MLP)      MAE=0.9613 RMSE=1.2532 R2=-0.9795
+Apenas Coh-Metrix [COM indice_original]      XGBoost                MAE=0.7354 RMSE=0.9345 R2=-0.1007
+TF-IDF + Coh-Metrix [COM indice_original]    Regressão Linear       MAE=0.7704 RMSE=1.1136 R2=-0.5630
+TF-IDF + Coh-Metrix [COM indice_original]    KNN                    MAE=0.9049 RMSE=1.0758 R2=-0.4587
+TF-IDF + Coh-Metrix [COM indice_original]    SVR                    MAE=0.8178 RMSE=0.9414 R2=-0.1170
+TF-IDF + Coh-Metrix [COM indice_original]    Árvore de Decisão      MAE=1.1107 RMSE=1.4330 R2=-1.5880
+TF-IDF + Coh-Metrix [COM indice_original]    Random Forest          MAE=0.8173 RMSE=0.9677 R2=-0.1803
+TF-IDF + Coh-Metrix [COM indice_original]    HistGradientBoosting   MAE=0.5910 RMSE=0.7653 R2=0.2619
+TF-IDF + Coh-Metrix [COM indice_original]    Rede Neural (MLP)      MAE=0.7557 RMSE=0.9690 R2=-0.1834
+TF-IDF + Coh-Metrix [COM indice_original]    XGBoost                MAE=0.7878 RMSE=0.9633 R2=-0.1696
+=== SEM indice_original ===
+Apenas Coh-Metrix [SEM indice_original]      Regressão Linear       MAE=1.0996 RMSE=1.2897 R2=-1.0965
+Apenas Coh-Metrix [SEM indice_original]      KNN                    MAE=1.1301 RMSE=1.3417 R2=-1.2690
+Apenas Coh-Metrix [SEM indice_original]      SVR                    MAE=0.9963 RMSE=1.1652 R2=-0.7112
+Apenas Coh-Metrix [SEM indice_original]      Árvore de Decisão      MAE=0.9101 RMSE=1.2899 R2=-1.0969
+Apenas Coh-Metrix [SEM indice_original]      Random Forest          MAE=0.9303 RMSE=1.0522 R2=-0.3955
+Apenas Coh-Metrix [SEM indice_original]      HistGradientBoosting   MAE=0.8889 RMSE=1.0302 R2=-0.3375
+Apenas Coh-Metrix [SEM indice_original]      Rede Neural (MLP)      MAE=0.8628 RMSE=1.2021 R2=-0.8213
+Apenas Coh-Metrix [SEM indice_original]      XGBoost                MAE=0.7940 RMSE=1.0150 R2=-0.2984
+TF-IDF + Coh-Metrix [SEM indice_original]    Regressão Linear       MAE=0.7680 RMSE=1.1071 R2=-0.5448
+TF-IDF + Coh-Metrix [SEM indice_original]    KNN                    MAE=0.9694 RMSE=1.1619 R2=-0.7016
+TF-IDF + Coh-Metrix [SEM indice_original]    SVR                    MAE=0.8205 RMSE=0.9438 R2=-0.1226
+TF-IDF + Coh-Metrix [SEM indice_original]    Árvore de Decisão      MAE=1.2465 RMSE=1.6395 R2=-2.3880
+TF-IDF + Coh-Metrix [SEM indice_original]    Random Forest          MAE=0.8954 RMSE=1.0660 R2=-0.4322
+TF-IDF + Coh-Metrix [SEM indice_original]    HistGradientBoosting   MAE=0.7191 RMSE=0.8767 R2=0.0314
+TF-IDF + Coh-Metrix [SEM indice_original]    Rede Neural (MLP)      MAE=0.9441 RMSE=1.1408 R2=-0.6402
+TF-IDF + Coh-Metrix [SEM indice_original]    XGBoost                MAE=0.8161 RMSE=0.9991 R2=-0.2580
